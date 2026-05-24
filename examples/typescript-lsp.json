@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "autoDiagnostics": true,
+  "autoDiagnosticsWaitMs": 800,
+  "maxFileSizeBytes": 2097152,
+  "serverPath": "auto",
+  "exclude": ["node_modules", "dist", "build", "coverage"]
+}

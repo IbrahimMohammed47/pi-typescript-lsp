@@ -1,0 +1,63 @@
+{
+  "name": "pi-typescript-lsp",
+  "version": "1.0.0",
+  "description": "Pi package adding TypeScript LSP navigation, diagnostics, import fixes, and rename tools for coding agents.",
+  "type": "commonjs",
+  "main": "index.ts",
+  "license": "MIT",
+  "author": "Ibrahim Mohammed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IbrahimMohammed47/pi-typescript-lsp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IbrahimMohammed47/pi-typescript-lsp/issues"
+  },
+  "homepage": "https://github.com/IbrahimMohammed47/pi-typescript-lsp#readme",
+  "keywords": [
+    "pi",
+    "pi-package",
+    "typescript",
+    "lsp",
+    "language-server",
+    "coding-agent",
+    "extension"
+  ],
+  "files": [
+    "index.ts",
+    "src/**/*.ts",
+    "types/**/*.d.ts",
+    "examples/**/*.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit --pretty false",
+    "test": "npm run typecheck",
+    "pack:dry-run": "npm pack --dry-run",
+    "prepublishOnly": "npm test && npm run pack:dry-run"
+  },
+  "dependencies": {
+    "typescript": "^6.0.3",
+    "typescript-language-server": "^5.3.0"
+  },
+  "peerDependencies": {
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.8",
+    "@types/node": "^25.9.1",
+    "semantic-release": "^25.0.3",
+    "typebox": "^1.1.38"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
