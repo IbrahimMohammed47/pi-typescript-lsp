@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/IbrahimMohammed47/pi-typescript-lsp/compare/v1.0.0...v1.0.1) (2026-05-24)
+
+
+### Bug Fixes
+
+* release from latest main ([813a244](https://github.com/IbrahimMohammed47/pi-typescript-lsp/commit/813a244d3fe0c9bea5bbb9aa40cb9da19bd2a5de))
+
 # 1.0.0 (2026-05-24)
 
 
